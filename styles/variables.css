@@ -1,1 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-main: 'Inter-Variable';
+  --font-accent: 'PressStart2P-Regular';
+  --font-weight-header: 400;
+  --font-weight-text: 400;
+  --header-width: clamp(100vw 50% 50vw);
+  --min-header-font-size: 49px;
+  --max-header-font-size: 65px;
+  --min-subtitle-font-size: 1rem;
+  --min-subtitle-font-size: 2rem;
+}

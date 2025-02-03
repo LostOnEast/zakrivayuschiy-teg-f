@@ -11,6 +11,98 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
+  font-family: var(--font-main), sans-serif;
+  font-variation-settings: 'wght' var(--font-weight-text);
+  background-image: linear-gradient(to bottom, white, gray);
+  width: 100vw;
+  
+}
+
+.header {
+  font-family: var(--font-accent), sans-serif;
+  width: var(--header-width);
+  display: grid;
+  aspect-ratio: 125/109;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+
+}
+.header_title {
+  font-size: clamp(var(--min-header-font-size) 105% var(--max-header-font-size));
+  font-size: 49px;
+}
+.header_subtitle {
+  font-size: clamp(var(--min-subtitle-font-size) 50% var(--max-subtitle-font-size));
+  font-size: 14px;
+}
+.header_container {
+  display: grid;
+  gap: 20px;
+}
+.card_item {
+  border: 2px solid black;
+  background-color: white;
+  display: grid;
+}
+.card_header {
+  padding: 7px 10px 3px 10px;
+  font-family: var(--font-main), sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  letter-spacing: 0.015rem;
+}
+.card_text {
+font-family: var(--font-main), sans-serif;
+font-size: 18px;  
+font-weight: 400;  
+line-height: 21px;  
+text-align: left;  
+text-underline-position: from-font;  
+text-decoration-skip-ink: none;  
+letter-spacing: 0.05rem;
+}
+.card_img {
+  inline-size: 100%;
+  object-fit: cover;
+ 
+}
+.card_content {
+  padding: 25px;
+}
+.main_article {
+  margin-bottom: 28px;
+}
+.button__text {
+  border: 2px solid black;
+  padding: 10px 35px;
+  font-family: var(--font-accent), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.card_actions {
+  display: flex;
+  padding-top: 26px;
+  padding-bottom: 25px;
+  justify-content: flex-end;
+}
+.button_social {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  align-items: center;
 }
