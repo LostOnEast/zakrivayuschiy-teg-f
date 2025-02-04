@@ -91,8 +91,8 @@ letter-spacing: 0.05rem;
 }
 .card__img-wrapper {
   position: relative;
-  background-image: url("../images/bus.png");
-  background-size: cover;
+  /* background-image: url("../images/bus.png");
+  background-size: cover; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,7 +247,30 @@ height: 44px;
   
 width: 44px;
 }
-
+.filter_brightness {
+  filter: brightness(0.8) ;
+}
+.filter_saturate {
+  filter: saturate(200%);
+}
+.filter_huerotate {
+  filter: hue-rotate(90deg);
+}
+.filter_grayscale {
+  filter: grayscale(100%);
+}
+.filter_blur {
+  filter: blur(2px);
+}
+.filter_sepia {
+  filter: sepia(50%);
+}
+.filter_huerotate_blur {
+  filter: hue-rotate(90deg) blur(2px);
+}
+.filter_invert {
+  filter: invert(100%);
+}
 @supports((text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color))) {
   .img__label {
     -webkit-text-stroke: 1px var(--text-stroke-color);
