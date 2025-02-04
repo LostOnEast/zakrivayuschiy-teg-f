@@ -167,16 +167,15 @@ letter-spacing: 0.05rem;
 }
 
 .button_save {
-  
-  display: flex;
-  flex-direction: column;
-  height: 84px;
-  width: 306px;
-  align-items: center;
-  border: 2px solid black;
-  margin: 52px 34.5px;
-  justify-content: center;
-  background-color: #FFFFFF;
+  display: flex;
+  /* flex-direction: column; */
+  height: 54px;
+  width: 337px;
+  align-items: center;
+  border: 2px solid black;
+  margin: 52px 34.5px;
+  justify-content: center;
+  background-color: #FFFFFF;
 }
 .svg_floppy {
   width: 28px;
