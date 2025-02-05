@@ -326,7 +326,7 @@
                 <p class="sub_article">Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
               </article>
               <div class="card_actions">
-                <button class="button_social">
+                <button class="button_social button_decorated">
                   <svg class="like-icon"width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 0H3V3H6V0Z" fill="black"/>
                     <path d="M9 0H6V3H9V0Z" fill="black"/>
@@ -349,7 +349,7 @@
                     <path d="M15 3H12V6H15V3Z" fill="black"/>
                     <path d="M15 21H12V24H15V21Z" fill="black"/>
                     </svg>
-                  <span class="button__text">Like</span></button>
+                  <span class="button__text invert_color">Like</span></button>
                 </div>
             </section>
           </li>
@@ -357,20 +357,20 @@
       </section>
     </main>
     <footer class="footer"> 
-      <button class="button_save" type="button" onclick="window['floppy_dialog'].showModal()" aria-controls="floppy_dialog">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" class="svg_floppy">
-          <use href="./images/floppy.svg#floppy"></use>
-         </svg>
-         <label class="footer__label">Сохранить на память</label>
+      <button class="button_save button_decorated" type="button" onclick="window['floppy_dialog'].showModal()" aria-controls="floppy_dialog">
+          <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" class="red" >
+            <use href="./images/floppy.svg#floppy"></use>
+          </svg>
+          <span class="footer__label invert_color">Сохранить на память</span>
       </button>
     </footer>
     <script src="./scripts/like.js"></script>
     <dialog  id="floppy_dialog" class="floppy_dialog">
       <div class="dialog_description">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" class="dialog_svg_floppy">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" class="dialog_svg_floppy invert_color">
           <use href="./images/floppy.svg#floppy"></use>
          </svg>
-         <label class="dialog_label">Вставьте дискету, чтобы продолжить</label>
+         <span class="dialog_label">Вставьте дискету, чтобы продолжить</span>
       </div>      
       <button class="dialog_button" type="button" onclick="window['floppy_dialog'].close()">OK</button>
     </dialog>

@@ -17,7 +17,15 @@
   padding: 0;
   font-family: var(--font-main), sans-serif;
   font-variation-settings: 'wght' var(--font-weight-text);
-  background: linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+  /* background: var(--background); */
+  background-attachment: fixed;
+  
+  background-image: 
+      repeating-linear-gradient(#d3d3d3 2px, transparent 2px),
+      repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+      linear-gradient( #e7e7e7 0.01vh, #1a1a1a 100%); 
+      
+  background-size: cover;
   justify-content: center;
   align-items: center;
 }
@@ -133,6 +141,62 @@ letter-spacing: 0.05rem;
 .main_article {
   margin-bottom: 27px;
 }
+
+.button_decorated {
+  position: relative;
+  overflow: hidden;
+
+}
+.button_decorated:focus {
+  outline: none;
+}
+.button_decorated:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0 black;
+  transition: box-shadow 0.5s ease-in-out;
+
+}
+.button_decorated::before {
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  background-color: black;
+  transition:transform  0.3s ease;
+  /* z-index: -1; */
+  
+}
+
+.button_decorated:hover::before {
+  transform: scaleX(2);
+}
+.invert_color {
+  color: var(--blend-color); /* Исходный цвет текста */
+  
+  mix-blend-mode: difference; /* Режим смешивания */
+  
+}
+.red {
+  fill: var(--blend-color);
+  color: var(--blend-color);
+  mix-blend-mode: difference;
+}
+.button_save {
+  
+  display: flex;
+  flex-direction: column;
+  height: 84px;
+  width: 306px;
+  align-items: center;
+  border: 2px solid black;
+  margin: 52px 34.5px;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
 .button__text {
   border: 2px solid black;
   padding: 10px 35px;
@@ -166,18 +230,7 @@ letter-spacing: 0.05rem;
   padding-bottom: 48px;
 }
 
-.button_save {
-  
-  display: flex;
-  flex-direction: column;
-  height: 84px;
-  width: 306px;
-  align-items: center;
-  border: 2px solid black;
-  margin: 52px 34.5px;
-  justify-content: center;
-  background-color: #FFFFFF;
-}
+
 .svg_floppy {
   width: 28px;
   height: 28px;

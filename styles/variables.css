@@ -11,4 +11,6 @@
   --min-subtitle-font-size: 1rem;
   --min-subtitle-font-size: 2rem;
   --text-stroke-color: #FFFFFF;
+  --blend-color: #FFFFFF;
+  --background: linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
 }
