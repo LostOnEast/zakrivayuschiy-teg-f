@@ -19,17 +19,18 @@
   font-variation-settings: 'wght' var(--font-weight-text);
   /* background: var(--background); */
   background-attachment: fixed;
-  
-  background-image: 
-      repeating-linear-gradient(#d3d3d3 2px, transparent 2px),
-      repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
-      linear-gradient( #e7e7e7 0.01vh, #1a1a1a 100%); 
-      
+
+  background-image: repeating-linear-gradient(#d3d3d3 2px, transparent 2px),
+    repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+    linear-gradient(#e7e7e7 0.01vh, #1a1a1a 100%);
+
   background-size: cover;
   justify-content: center;
   align-items: center;
 }
-.main, .header, .footer {
+.main,
+.header,
+.footer {
   width: var(--header-width);
   width: 48.5%;
 }
@@ -45,23 +46,17 @@
   margin-bottom: 8vh;
 }
 .header_title {
-
   font-size: clamp(1rem, 5vw, 4.065rem);
   font-weight: 400;
-  
-  
 }
 .header_subtitle {
   /* font-size: clamp(var(--min-subtitle-font-size) 50% var(--max-subtitle-font-size)); */
   font-size: clamp(1rem, 2vw, 1.438rem);
-  font-weight: 400;  
+  font-weight: 400;
   line-height: 23px;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-transform: uppercase;
-
-  
-  
 }
 .header_container {
   display: grid;
@@ -88,14 +83,14 @@
   /* letter-spacing: 0.0rem; */
 }
 .card_text {
-font-family: var(--font-main), sans-serif;
-font-size: 18px;  
-font-weight: 400;  
-line-height: 21px;  
-text-align: left;  
-text-underline-position: from-font;  
-text-decoration-skip-ink: none;  
-letter-spacing: 0.05rem;
+  font-family: var(--font-main), sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  letter-spacing: 0.05rem;
 }
 .card__img-wrapper {
   position: relative;
@@ -107,7 +102,6 @@ letter-spacing: 0.05rem;
   width: 100%;
   aspect-ratio: 1/1;
   border-top: 2px solid black;
-  
 }
 .img__label {
   font-family: var(--font-accent), sans-serif;
@@ -120,20 +114,17 @@ letter-spacing: 0.05rem;
   position: absolute;
   right: 10px;
   top: 20px;
-  mix-blend-mode: hard-light;  
+  mix-blend-mode: hard-light;
   text-shadow:
-    -1px 0 var(--text-stroke-color, #FFFFFF), 
-    0 1px var(--text-stroke-color, #FFFFFF), 
-    1px 0 var(--text-stroke-color, #FFFFFF), 
-    0 -1px var(--text-stroke-color, #FFFFFF);
-  
+    -1px 0 var(--text-stroke-color, #ffffff),
+    0 1px var(--text-stroke-color, #ffffff),
+    1px 0 var(--text-stroke-color, #ffffff),
+    0 -1px var(--text-stroke-color, #ffffff);
 }
 
 .card_img {
   inline-size: 100%;
   object-fit: cover;
-  
- 
 }
 .card_content {
   padding: 30px 25px 0px 25px;
@@ -163,7 +154,6 @@ letter-spacing: 0.05rem;
   overflow: hidden;
   cursor: pointer;
   border: 2px solid black;
-
 }
 .button_decorated:focus {
   outline: none;
@@ -172,7 +162,6 @@ letter-spacing: 0.05rem;
   outline: none;
   box-shadow: 2px 2px 0 black;
   transition: box-shadow 0.5s ease-in-out;
-
 }
 .button_decorated::before {
   content: '';
@@ -183,9 +172,8 @@ letter-spacing: 0.05rem;
   width: 100%;
   transform: scaleX(0);
   background-color: black;
-  transition:transform  0.3s ease;
+  transition: transform 0.3s ease;
   /* z-index: -1; */
-  
 }
 
 .button_decorated:hover::before {
@@ -195,11 +183,9 @@ letter-spacing: 0.05rem;
   color: var(--blend-color); /* Исходный цвет текста */
   fill: var(--blend-color);
   mix-blend-mode: difference; /* Режим смешивания */
-  
 }
 
 .button_save {
-  
   display: flex;
   flex-direction: column;
   height: 84px;
@@ -208,7 +194,7 @@ letter-spacing: 0.05rem;
   border: 2px solid black;
   margin: 52px 34.5px;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .button__text {
@@ -239,11 +225,10 @@ letter-spacing: 0.05rem;
 }
 .footer {
   display: grid;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   justify-content: center;
   padding-bottom: 48px;
 }
-
 
 .svg_floppy {
   width: 28px;
@@ -257,10 +242,7 @@ letter-spacing: 0.05rem;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  
-
 }
-
 
 .floppy_dialog {
   position: fixed;
@@ -275,7 +257,7 @@ letter-spacing: 0.05rem;
 }
 
 .body:has(.floppy_dialog[open]) {
-  overflow: hidden
+  overflow: hidden;
 }
 .dialog_description {
   display: flex;
@@ -285,14 +267,13 @@ letter-spacing: 0.05rem;
 }
 .dialog_button {
   font-family: var(--font-accent), sans-serif;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 2px solid black;
   max-inline-size: 90%;
   min-inline-size: 255px;
   min-block-size: 38px;
 }
 .dialog_label {
-  
   font-family: var(--font-accent), sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -302,20 +283,18 @@ letter-spacing: 0.05rem;
   text-decoration-skip-ink: none;
   text-transform: uppercase;
   align-self: flex-start;
-
 }
 .dialog_svg_floppy {
-  
-min-height: 44px;
-  
-min-width: 44px;
-  
-height: 44px;
-  
-width: 44px;
+  min-height: 44px;
+
+  min-width: 44px;
+
+  height: 44px;
+
+  width: 44px;
 }
 .filter_brightness {
-  filter: brightness(0.8) ;
+  filter: brightness(0.8);
 }
 .filter_saturate {
   filter: saturate(200%);
@@ -338,16 +317,20 @@ width: 44px;
 .filter_invert {
   filter: invert(100%);
 }
-@supports((text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color))) {
+@supports (
+  (text-stroke: 1px var(--text-stroke-color)) or
+    (-webkit-text-stroke: 1px var(--text-stroke-color))
+) {
   .img__label {
     -webkit-text-stroke: 1px var(--text-stroke-color);
-    text-stroke: 1px ;
+    text-stroke: 1px;
     text-shadow: none;
   }
 }
 @media (width <= 375px) {
-  
-  .main, .header, .footer {
+  .main,
+  .header,
+  .footer {
     width: 100%;
   }
   .header {
@@ -363,10 +346,6 @@ width: 44px;
     border: 2px solid black;
     margin: 52px 34.5px;
     justify-content: center;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+  }
 }
-}
-
-
-
-

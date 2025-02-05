@@ -5,15 +5,14 @@
   --font-weight-header: 400;
   --font-weight-text: 400;
   --header-width: 60%;
-  --logo-font-size: clamp(49px,100%,65px)
-  --min-header-font-size: 49px;
+  --logo-font-size: clamp(49px, 100%, 65px) --min-header-font-size: 49px;
   --max-header-font-size: 65px;
   --min-subtitle-font-size: 1rem;
   --min-subtitle-font-size: 2rem;
-  --text-stroke-color: #FFFFFF;
-  --blend-color: #FFFFFF;
+  --text-stroke-color: #ffffff;
+  --blend-color: #ffffff;
   --heart-contour-color: black;
   --heart-sparks-color: red;
   --heart-sparks-accent: black;
-  --background: linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
+  --background: linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
 }
