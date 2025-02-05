@@ -17,7 +17,6 @@
   padding: 0;
   font-family: var(--font-main), sans-serif;
   font-variation-settings: 'wght' var(--font-weight-text);
-  /* background: var(--background); */
   background-attachment: fixed;
 
   background-image: repeating-linear-gradient(#d3d3d3 2px, transparent 2px),
@@ -50,7 +49,6 @@
   font-weight: 400;
 }
 .header_subtitle {
-  /* font-size: clamp(var(--min-subtitle-font-size) 50% var(--max-subtitle-font-size)); */
   font-size: clamp(1rem, 2vw, 1.438rem);
   font-weight: 400;
   line-height: 23px;
@@ -80,7 +78,6 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  /* letter-spacing: 0.0rem; */
 }
 .card_text {
   font-family: var(--font-main), sans-serif;
@@ -94,8 +91,6 @@
 }
 .card__img-wrapper {
   position: relative;
-  /* background-image: url("../images/bus.png");
-  background-size: cover; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,16 +168,15 @@
   transform: scaleX(0);
   background-color: black;
   transition: transform 0.3s ease;
-  /* z-index: -1; */
 }
 
 .button_decorated:hover::before {
   transform: scaleX(2);
 }
 .invert_color {
-  color: var(--blend-color); /* Исходный цвет текста */
+  color: var(--blend-color); 
   fill: var(--blend-color);
-  mix-blend-mode: difference; /* Режим смешивания */
+  mix-blend-mode: difference;
 }
 
 .button_save {
