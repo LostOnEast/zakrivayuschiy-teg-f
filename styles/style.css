@@ -31,7 +31,8 @@
 .header,
 .footer {
   width: var(--header-width);
-  width: 48.5%;
+  min-width: var(--header-width);
+  /* width: 48.5%; */
 }
 .header {
   font-family: var(--font-accent), sans-serif;
@@ -40,7 +41,7 @@
   align-items: center;
   text-align: center;
   background-color: white;
-  border: 1px solid black;
+  border: var(--main-border);
   margin-top: 8vh;
   margin-bottom: 8vh;
 }
@@ -61,11 +62,12 @@
   gap: 20px;
 }
 .card_list {
+  max-width: 100%;
   display: grid;
   gap: 50px;
 }
 .card_item {
-  border: 2px solid black;
+  border: var(--main-border);
   background-color: white;
   display: grid;
 }
@@ -91,12 +93,7 @@
 }
 .card__img-wrapper {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  aspect-ratio: 1/1;
-  border-top: 2px solid black;
+  
 }
 .img__label {
   font-family: var(--font-accent), sans-serif;
@@ -118,16 +115,38 @@
 }
 
 .card_img {
-  inline-size: 100%;
+  max-inline-size: 100%;
+  max-block-size: 100%;
+  width: 100%;
+  object-fit: contain;
   object-fit: cover;
+  object-fit: fill;
 }
 .card_content {
   padding: 30px 25px 0px 25px;
 }
 .main_article {
   margin-bottom: 27px;
+  
+
+}
+.heart {
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.like-icon {
+  display: flex;
+  overflow: visible;
+  justify-content: flex-end;
+  align-content: flex-start;
+  align-items: center;
 }
 .button_heart {
+  overflow: visible;
+  padding: 0;
+  margin: 0;
   border: none;
   cursor: pointer;
   background: inherit;
@@ -138,7 +157,7 @@
 }
 .button_heart:focus-visible {
   outline: none;
-  border: 2px solid black;
+  border: var(--main-border);
   transition: border 0.3s ease;
 }
 .sparks {
@@ -180,19 +199,21 @@
 }
 
 .button_save {
+  margin: 10;
   display: flex;
-  flex-direction: column;
-  height: 84px;
-  width: 306px;
-  align-items: center;
-  border: 2px solid black;
+  gap: 5px;
+  font-size: 14px;
+  width: clamp(306px, 25vw, 335px);
+  min-height: 4vh;
+  border: var(--main-border);
   margin: 52px 34.5px;
-  justify-content: center;
   background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
 }
 
 .button__text {
-  border: 2px solid black;
+  border: var(--main-border);
   padding: 10px 35px;
   font-family: var(--font-accent), sans-serif;
   font-size: 14px;
@@ -211,15 +232,15 @@
 }
 .button_social {
   display: flex;
-  gap: 12px;
+  inline-size: 135px;
   margin: 0;
   padding: 0;
   background-color: inherit;
   align-items: center;
+  justify-content: center;
 }
 .footer {
   display: grid;
-  background-color: #ffffff;
   justify-content: center;
   padding-bottom: 48px;
 }
@@ -242,9 +263,9 @@
   position: fixed;
   padding: 31px 42px;
   inset: 0;
-  max-inline-size: 91%;
   min-inline-size: 341px;
-  border: 2px solid black;
+  max-inline-size: 353px;
+  border: var(--main-border);
 }
 .floppy_dialog[open]::backdrop {
   background-color: rgba(0, 0, 0, 0.85);
@@ -262,7 +283,7 @@
 .dialog_button {
   font-family: var(--font-accent), sans-serif;
   background-color: #ffffff;
-  border: 2px solid black;
+  border: var(--main-border);
   max-inline-size: 90%;
   min-inline-size: 255px;
   min-block-size: 38px;
@@ -337,7 +358,7 @@
     height: 84px;
     width: 306px;
     align-items: center;
-    border: 2px solid black;
+    border: var(--main-border);
     margin: 52px 34.5px;
     justify-content: center;
     background-color: #ffffff;
