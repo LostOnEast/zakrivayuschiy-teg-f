@@ -4,8 +4,9 @@
   --font-accent: 'PressStart2P-Regular';
   --font-weight-header: 400;
   --font-weight-text: 400;
-  --header-width: 60%;
-  --logo-font-size: clamp(49px, 100%, 65px) --min-header-font-size: 49px;
+  --header-width: 49%;
+  --logo-font-size: clamp(49px, 100%, 65px) 
+  --min-header-font-size: 49px;
   --max-header-font-size: 65px;
   --min-subtitle-font-size: 1rem;
   --min-subtitle-font-size: 2rem;
