@@ -141,10 +141,28 @@ letter-spacing: 0.05rem;
 .main_article {
   margin-bottom: 27px;
 }
-
+.button_heart {
+  border: none;
+  cursor: pointer;
+  background: inherit;
+  border: 2px solid transparent;
+}
+.button_heart:focus {
+  outline: none;
+}
+.button_heart:focus-visible {
+  outline: none;
+  border: 2px solid black;
+  transition: border 0.3s ease;
+}
+.sparks {
+  opacity: 0;
+}
 .button_decorated {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  border: 2px solid black;
 
 }
 .button_decorated:focus {
@@ -206,6 +224,7 @@ letter-spacing: 0.05rem;
 }
 .card_actions {
   display: flex;
+  gap: 4px;
   padding-top: 25px;
   padding-bottom: 25px;
   justify-content: flex-end;
@@ -215,7 +234,6 @@ letter-spacing: 0.05rem;
   gap: 12px;
   margin: 0;
   padding: 0;
-  border: none;
   background-color: inherit;
   align-items: center;
 }

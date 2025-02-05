@@ -22,7 +22,9 @@ likeButtonArray.forEach((button, index) => {
 });
 
 function toggleIsLiked(heart, button) {
+  console.log(heart.classList);
   heart.classList.toggle('is-liked');
+  console.log(heart.classList);
   setButtonText(heart, button);
 }
 

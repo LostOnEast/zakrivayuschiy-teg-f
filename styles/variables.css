@@ -12,5 +12,8 @@
   --min-subtitle-font-size: 2rem;
   --text-stroke-color: #FFFFFF;
   --blend-color: #FFFFFF;
+  --heart-contour-color: black;
+  --heart-sparks-color: red;
+  --heart-sparks-accent: black;
   --background: linear-gradient(180deg, #E7E7E7 0%, #1A1A1A 100%);
 }
