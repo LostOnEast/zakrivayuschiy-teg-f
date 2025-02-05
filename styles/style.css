@@ -93,7 +93,6 @@
 }
 .card__img-wrapper {
   position: relative;
-  
 }
 .img__label {
   font-family: var(--font-accent), sans-serif;
@@ -118,17 +117,13 @@
   max-inline-size: 100%;
   max-block-size: 100%;
   width: 100%;
-  object-fit: contain;
   object-fit: cover;
-  object-fit: fill;
 }
 .card_content {
   padding: 30px 25px 0px 25px;
 }
 .main_article {
   margin-bottom: 27px;
-  
-
 }
 .heart {
   transform-origin: center;
@@ -156,7 +151,6 @@
   outline: none;
 }
 .button_heart:focus-visible {
-  outline: none;
   border: var(--main-border);
   transition: border 0.3s ease;
 }
@@ -193,13 +187,12 @@
   transform: scaleX(2);
 }
 .invert_color {
-  color: var(--blend-color); 
+  color: var(--blend-color);
   fill: var(--blend-color);
   mix-blend-mode: difference;
 }
 
 .button_save {
-  margin: 10;
   display: flex;
   gap: 5px;
   font-size: 14px;

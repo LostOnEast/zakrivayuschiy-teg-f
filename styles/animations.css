@@ -67,11 +67,6 @@
   transition: fill 0.3s ease;
 }
 
-.button_heart:active .main-body {
-  fill: var(--heart-sparks-color);
-  transition-delay: 0.05s;
-  transition: fill 0.3s ease;
-}
 .button_heart .is-liked .contour {
   fill: var(--heart-sparks-color);
   transition-delay: 0.06s;
