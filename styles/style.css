@@ -290,6 +290,10 @@
   text-underline-position: from-font;
 }
 
+.dialog_button_text {
+  text-transform: uppercase;
+}
+
 .floppy_dialog {
   position: fixed;
   inset: 0;
