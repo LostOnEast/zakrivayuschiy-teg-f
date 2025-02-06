@@ -1,7 +1,0 @@
-# # Игнорировать все файлы, кроме указанных
-# *
-# !src/index.html
-# !src/styles/style.css
-# !src/styles/variables.css
-# !src/styles/light.css
-# !src/styles/dark.css
