@@ -1,17 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
 :root {
   --font-main: 'Inter-Variable';
   --font-accent: 'PressStart2P-Regular';
   --font-weight-header: 400;
   --font-weight-text: 400;
   --header-width: 48.5%;
-  --logo-font-size: clamp(49px, 100%, 65px) 
-  --min-header-font-size: 49px;
+  --logo-font-size: clamp(49px, 100%, 65px); --min-header-font-size: 49px;
   --max-header-font-size: 65px;
   --min-subtitle-font-size: 1rem;
   --min-subtitle-font-size: 2rem;
-  --text-stroke-color: #ffffff;
-  --blend-color: #ffffff;
+  --text-stroke-color: #fff;
+  --blend-color: #fff;
   --heart-contour-color: black;
   --heart-sparks-color: red;
   --heart-sparks-accent: black;
