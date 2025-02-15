@@ -6,7 +6,9 @@
   --font-weight-header: 400;
   --font-weight-text: 400;
   --header-width: 48.5%;
-  --logo-font-size: clamp(49px, 100%, 65px); --min-header-font-size: 49px;
+  --logo-font-size: clamp(49px, 100%, 65px);
+
+  --min-header-font-size: 49px;
   --max-header-font-size: 65px;
   --min-subtitle-font-size: 1rem;
   --min-subtitle-font-size: 2rem;
@@ -17,4 +19,5 @@
   --heart-sparks-accent: black;
   --main-border: 2px solid black;
   --background: linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
+  --card-content-font-size: clamp(0.6rem, 100%, 1.125rem);
 }

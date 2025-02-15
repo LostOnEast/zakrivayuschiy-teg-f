@@ -18,7 +18,6 @@
   margin: 0;
   padding: 0;
   font-family: var(--font-main), sans-serif;
-
   background-image: repeating-linear-gradient(
       to right,
       #d3d3d3,
@@ -45,6 +44,7 @@
 .footer {
   width: var(--header-width);
   min-width: var(--header-width);
+  /* max-width: var(--header-width); */
 }
 
 .header {
@@ -81,7 +81,7 @@
 .card_list {
   display: grid;
   gap: 50px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .card_item {
@@ -94,7 +94,8 @@
   padding: 6px 10px 3px;
   font-family: var(--font-main), sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  
+  font-size: var(--card-content-font-size);
   line-height: 21.78px;
   text-align: left;
   text-decoration-skip-ink: none;
@@ -102,9 +103,10 @@
 }
 
 .card_text {
+  padding: 0;
   font-family: var(--font-main), sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  /* font-size: 18px; */
   line-height: 21px;
   letter-spacing: 0.05rem;
   text-align: left;
@@ -114,6 +116,7 @@
 
 .card__img-wrapper {
   position: relative;
+  max-width: 100%;
 }
 
 .img__label {
@@ -136,15 +139,19 @@
 }
 
 .card_img {
-  width: 100%;
-  object-fit: cover;
-  max-inline-size: 100%;
+  /* display: block; */
+  /* max-width: 100%; */
+  /* object-fit: cover; */
+  inline-size: 100%;
   max-block-size: 100%;
 }
 
 .card_content {
-  padding: 30px 25px 0;
+  padding: 30px 25px;
+  
+  
 }
+
 
 .main_article {
   margin-bottom: 27px;
@@ -241,7 +248,7 @@
 
 .button__text {
   border: var(--main-border);
-  padding: 10px 35px;
+  /* padding: 10px 35px; */
   font-family: var(--font-accent), fantasy;
   font-weight: 400;
   font-size: 14px;
@@ -254,6 +261,7 @@
 .card_actions {
   display: flex;
   justify-content: flex-end;
+  max-width: 100%;
   gap: 4px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -266,7 +274,8 @@
   margin: 0;
   padding: 0;
   background-color: inherit;
-  inline-size: 135px;
+  inline-size: clamp(64px, 40%, 135px)
+  /* max-inline-size: 135px; */
 }
 
 .footer {
