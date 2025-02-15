@@ -281,8 +281,6 @@
 }
 
 .floppy_dialog {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   inset: 0;
   border: var(--main-border);
