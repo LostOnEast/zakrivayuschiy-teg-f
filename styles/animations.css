@@ -60,8 +60,6 @@
   transition: fill 0.3s ease 0.05s;
 }
 
-
-
 .button_heart:hover .core {
   fill: var(--heart-contour-color);
   transition: fill 0.3s ease;
@@ -96,11 +94,3 @@
 .button_heart .is-liked .sparks {
   animation: sparks 0.3s ease-in 0.3s 1;
 }
-
-
-
-
-
-
-
-

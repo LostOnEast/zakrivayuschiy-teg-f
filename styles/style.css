@@ -20,7 +20,7 @@
   font-family: var(--font-main), sans-serif;
   background-image: var(--background-image);
   background-size: cover;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   font-variation-settings: 'wght' var(--font-weight-text);
 }
 
@@ -55,7 +55,6 @@
 }
 
 .header_subtitle {
-  
   font-weight: 400;
   font-size: var(--header-subtitle-font-size);
   line-height: 23px;
@@ -85,7 +84,7 @@
   padding: 6px 10px 3px;
   font-family: var(--font-main), sans-serif;
   font-weight: 700;
-  font-variation-settings: 'wght' var(--font-weight-card-header);  
+  font-variation-settings: 'wght' var(--font-weight-card-header);
   font-size: var(--card-content-font-size);
   line-height: 21.78px;
   text-align: left;
@@ -99,7 +98,7 @@
   font-variation-settings: 'wght' var(--font-weight-card-text);
   line-height: 21px;
   font-size: var(--card-content-font-size);
-  
+
   text-align: left;
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
@@ -136,7 +135,6 @@
   padding: 25px;
 }
 
-
 .main_article {
   margin-bottom: 27px;
 }
@@ -171,7 +169,7 @@
 }
 
 .button_heart:focus-visible {
-  border: var(--main-border);  
+  border: var(--main-border);
 }
 
 .sparks {
@@ -197,13 +195,13 @@
 
 .button_decorated:focus-visible {
   box-shadow: 2px 2px 0 black;
-  outline: none;  
+  outline: none;
 }
 
 .button_decorated::before {
   content: '';
   position: absolute;
-  top: 0;  
+  top: 0;
   min-width: 100%;
   height: 100%;
   background-color: black;
@@ -212,7 +210,7 @@
   transform: scaleX(0);
 }
 
-.button_decorated:hover::before {  
+.button_decorated:hover::before {
   transform: scaleX(1);
 }
 
