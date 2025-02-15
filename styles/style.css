@@ -43,8 +43,9 @@
 .main,
 .header,
 .footer {
-  width: var(--header-width);
-  min-width: var(--header-width);
+  /* width: var(--header-width); */
+  /* min-width: var(--header-width); */
+  max-width: var(--header-width);
 }
 
 .header {
