@@ -14,18 +14,18 @@
   --font-weight-text: 400;
   --font-weight-card-header: 700;
   --font-weight-card-text: 400;
-  --header-width: 48.5%;
+  /* Клэмпы */
+  --header-width: clamp(350px, calc(49.5vw - 20px), 50vw);
+  --header-title-font-size: clamp(1rem, 5vw, 4.065rem);
+  --header-subtitle-font-size: clamp(1rem, 2vw, 1.438rem);
   --logo-font-size: clamp(49px, 100%, 65px);
-  --min-header-font-size: 49px;
-  --max-header-font-size: 65px;
-  --min-subtitle-font-size: 1rem;
-  --min-subtitle-font-size: 2rem;
+  --card-content-font-size: clamp(0.75rem, 0.618rem + 0.5634vw, 1.125rem);
+  --button-social-width: clamp(64px, 40%, 130px);
   --text-stroke-color: rgba(255, 255, 255, 0.5);
   --blend-color: #fff;
   --heart-contour-color: black;
   --heart-sparks-color: red;
   --heart-sparks-accent: black;
   --main-border: 2px solid black;
-  --background: linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
-  --card-content-font-size: clamp(0.6rem, 100%, 1.125rem);
+  /* --background: linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%); */
 }

@@ -20,30 +20,27 @@
   font-family: var(--font-main), sans-serif;
   background-image: var(--background-image);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; 
   font-variation-settings: 'wght' var(--font-weight-text);
 }
 
 .main,
-.header,
-.footer {
+.header {
   width: var(--header-width);
-  min-width: var(--header-width);
-  /* max-width: var(--header-width); */
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
 }
 
 .header {
   display: grid;
   gap: 20px;
   align-items: center;
-  margin-top: 8vh;
-  margin-bottom: 8vh;
+  margin-top: 7vw;
+  margin-bottom: 6.8vw;
   border: var(--main-border);
   font-family: var(--font-accent), fantasy;
   text-align: center;
@@ -54,13 +51,13 @@
 
 .header_title {
   font-weight: 400;
-  font-size: clamp(1rem, 5vw, 4.065rem);
+  font-size: var(--header-title-font-size);
 }
 
 .header_subtitle {
   
   font-weight: 400;
-  font-size: clamp(1rem, 2vw, 1.438rem);  
+  font-size: var(--header-subtitle-font-size);
   line-height: 23px;
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
@@ -74,7 +71,7 @@
 
 .card_list {
   display: grid;
-  gap: 49px;
+  gap: 50px;
   width: 100%;
 }
 
@@ -101,7 +98,8 @@
   font-family: var(--font-main), sans-serif;
   font-variation-settings: 'wght' var(--font-weight-card-text);
   line-height: 21px;
-  /* letter-spacing: 0.05rem; */
+  font-size: var(--card-content-font-size);
+  
   text-align: left;
   text-decoration-skip-ink: none;
   text-underline-position: from-font;
@@ -128,9 +126,8 @@
 }
 
 .card_img {
-  /* display: block; */
-  /* max-width: 100%; */
-  /* object-fit: cover; */
+  object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   max-block-size: 100%;
 }
@@ -166,6 +163,7 @@
   overflow: visible;
   background: inherit;
   cursor: pointer;
+  transition: border 0.3s ease;
 }
 
 .button_heart:focus {
@@ -173,8 +171,7 @@
 }
 
 .button_heart:focus-visible {
-  border: var(--main-border);
-  transition: border 0.3s ease;
+  border: var(--main-border);  
 }
 
 .sparks {
@@ -183,9 +180,15 @@
 
 .button_decorated {
   position: relative;
-  border: 2px solid black;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 14px;
+  font-family: var(--font-accent), fantasy;
+  border: var(--main-border);
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
 .button_decorated:focus {
@@ -194,24 +197,23 @@
 
 .button_decorated:focus-visible {
   box-shadow: 2px 2px 0 black;
-  outline: none;
-  transition: box-shadow 0.5s ease-in-out;
+  outline: none;  
 }
 
 .button_decorated::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: -50%;
-  width: 100%;
+  top: 0;  
+  min-width: 100%;
   height: 100%;
   background-color: black;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left top;
   transform: scaleX(0);
 }
 
-.button_decorated:hover::before {
-  transform: scaleX(2);
+.button_decorated:hover::before {  
+  transform: scaleX(1);
 }
 
 .invert_color {
@@ -221,22 +223,15 @@
 }
 
 .button_save {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  align-self: center;
   gap: 5px;
-  /* width: clamp(306px, 25vw, 335px); */
-  min-height: 4vh;
-  /* margin: 52px 34.5px; */
-  border: var(--main-border);
-  font-size: 14px;
-  background-color: #fff;
+  min-height: 55px;
+  width: 335px;
   margin-bottom: 20px;
 }
 
 .button__text {
   border: var(--main-border);
-  /* padding: 10px 35px; */
   font-family: var(--font-accent), fantasy;
   font-weight: 400;
   font-size: 14px;
@@ -252,17 +247,12 @@
   max-width: 100%;
   gap: 4px;
   padding-top: 25px;
-  /* padding-bottom: 25px; */
 }
 
 .button_social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;  
+  margin: 0;
   padding: 0;
-  background-color: inherit;
-  inline-size: clamp(64px, 40%, 135px)
+  inline-size: var(--button-social-width);
 }
 
 .footer {
@@ -291,6 +281,8 @@
 }
 
 .floppy_dialog {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   inset: 0;
   border: var(--main-border);
@@ -300,7 +292,7 @@
 }
 
 .floppy_dialog[open]::backdrop {
-  background-color: rgb(0 0 0 / 0.85);
+  background-color: rgb(0 0 0 / 0.5);
 }
 
 .body:has(.floppy_dialog[open]) {
@@ -315,9 +307,6 @@
 }
 
 .dialog_button {
-  border: var(--main-border);
-  font-family: var(--font-accent), fantasy;
-  background-color: #fff;
   max-inline-size: 90%;
   min-inline-size: 255px;
   min-block-size: 38px;
@@ -397,10 +386,9 @@
   }
 
   .header {
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
     aspect-ratio: 125/109;
-    /* font-size: 19px; */
   }
 
   .header_title {
@@ -424,12 +412,8 @@
 
   .button_save {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 306px;
     height: 84px;
     margin: 30px 34.5px;
-    border: var(--main-border);
-    background-color: #fff;
   }
 }
