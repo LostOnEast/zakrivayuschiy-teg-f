@@ -1,10 +1,10 @@
 {
   "name": "posmotri_v_okno",
   "version": "1.0.0",
-  "description": "https://github.com/LostOnEast/posmotri_v_okno",
+  "description": "https://github.com/LostOnEast/zakrivayuschiy-teg-f",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Привет!\" && exit 1",
+    "test": "echo \" echo test ok\" && exit 1",
     "check": "prettier --check './**/*.{html,css,js}'",
     "format": "prettier --write './**/*.{html,css,js}'",
     "lint": "stylelint **/*.css",

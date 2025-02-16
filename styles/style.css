@@ -378,9 +378,13 @@
     width: 100%;
   }
 
+  .main {
+    gap: 25px;
+  }
+
   .header {
-    margin-top: 15vw;
-    margin-bottom: 15vw;
+    margin-top: 27vw;
+    margin-bottom: 26vw;
     aspect-ratio: 125/109;
   }
 
