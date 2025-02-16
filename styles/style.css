@@ -137,7 +137,6 @@
   padding: 25px;
 }
 
-
 .heart {
   display: flex;
   justify-content: center;
@@ -279,15 +278,15 @@
 
 .floppy_dialog {
   position: fixed;
-  inset: 0; 
+  inset: 0;
   border: var(--main-border);
   padding: 31px 42px;
   min-inline-size: 341px;
   max-inline-size: 353px;
 }
 
-.floppy_dialog[open]::backdrop {  
-  background-color: rgba(64, 64, 64, 50%);
+.floppy_dialog[open]::backdrop {
+  background-color: rgb(64 64 64 / 0.5);
 }
 
 .body:has(.floppy_dialog[open]) {
@@ -360,9 +359,11 @@
   filter: invert(100%);
 }
 
-@supports((text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color))) 
-{
-  
+@supports (
+  (text-stroke: 1px var(--text-stroke-color)) or
+    (-webkit-text-stroke: 1px var(--text-stroke-color))
+) {
+
   .img__label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--text-stroke-color);
@@ -399,11 +400,11 @@
     font-size: 14px;
   }
 
-  .img__label {    
+  .img__label {
     top: 20px;
     right: 10px;
   }
-  
+
   .card_header {
     font-size: 18px;
   }
